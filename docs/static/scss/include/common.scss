@@ -1,0 +1,61 @@
+$border_color: #a2a2a2;
+$light_border_color: lighten(#a2a2a2, 20%);
+
+$keyboard_height: 180px;
+$keyboard_height_short: 120px;
+$keyboard_height_very_short: 90px;
+$button_color: #727290;
+$button_color_highlight: #E0E0E7;
+$default_width: 900px;
+$line_spacing: 30px;
+$body_background: #e7e7e7;
+$body_color: #333;
+
+$settings_panel_width: 270px;
+
+$teal: #7ED6D7;
+$red: #fe4e50;
+$green: #aada80;
+$blue: #34a0f2;
+$orange: #FB9175;
+$yellow: #FDBF6C;
+$purple: #A287C0;
+
+$error_color: #D14343;
+
+$header_height: 50px;
+
+@mixin unselectable {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+@mixin border_box {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+@mixin on_narrow_width {
+    @media (max-width: 1100px) {
+        @content;
+    }
+}
+
+@mixin on_narrow_height {
+    @media (max-width: 1100px) {
+        @content;
+    }
+}
+
+@mixin on_very_narrow_height {
+    @media (max-width: 800px) {
+        @content;
+    }
+}
+
+@mixin single_line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

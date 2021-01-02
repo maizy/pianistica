@@ -1,0 +1,186 @@
+@media (min-width: 900px) {
+  .ear_training_page .toggle_sidebar_button {
+    display: none; } }
+
+.ear_training_page .exercise_header {
+  padding: 20px;
+  display: flex;
+  align-items: center; }
+  .ear_training_page .exercise_header .toggle_sidebar_button {
+    margin-right: 10px; }
+  @media (max-width: 900px) {
+    .ear_training_page .exercise_header {
+      padding-bottom: 0; } }
+  .ear_training_page .exercise_header > .exercise_label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.5em;
+    margin: 0; }
+    @media (max-width: 900px) {
+      .ear_training_page .exercise_header > .exercise_label {
+        font-size: 1.2em; } }
+.ear_training_page .warning {
+  color: #D14343;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+.ear_training_page .choose_device h3 {
+  margin-top: 0; }
+
+.ear_training_page .melody_recognition_exercise .page_container {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.ear_training_page .melody_recognition_exercise .interval_settings {
+  margin: 20px 0; }
+  .ear_training_page .melody_recognition_exercise .interval_settings fieldset {
+    padding: 10px; }
+  .ear_training_page .melody_recognition_exercise .interval_settings ul {
+    list-style: none;
+    margin: 0 0 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+    align-items: start;
+    padding: 0; }
+    .ear_training_page .melody_recognition_exercise .interval_settings ul li {
+      padding: 0;
+      margin: 0; }
+
+.ear_training_page .melody_recognition_exercise .autoplay_options {
+  padding: 10px; }
+  .ear_training_page .melody_recognition_exercise .autoplay_options input[type=checkbox] {
+    margin: 0 10px 0 0; }
+  .ear_training_page .melody_recognition_exercise .autoplay_options ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .ear_training_page .melody_recognition_exercise .autoplay_options ul > li {
+      font-size: 15px;
+      margin-bottom: 15px; }
+      .ear_training_page .melody_recognition_exercise .autoplay_options ul > li label {
+        display: flex;
+        align-items: center; }
+        .ear_training_page .melody_recognition_exercise .autoplay_options ul > li label > * {
+          margin-right: 10px; }
+          .ear_training_page .melody_recognition_exercise .autoplay_options ul > li label > *:last-child {
+            margin-right: 0; }
+      .ear_training_page .melody_recognition_exercise .autoplay_options ul > li:last-child {
+        margin-bottom: 0; }
+
+.ear_training_page .melody_recognition_exercise .song_selector .global_controls {
+  display: flex;
+  align-items: center; }
+  .ear_training_page .melody_recognition_exercise .song_selector .global_controls > * {
+    margin-right: 10px; }
+    .ear_training_page .melody_recognition_exercise .song_selector .global_controls > *:last-child {
+      margin-right: 0; }
+  @media (max-width: 600px) {
+    .ear_training_page .melody_recognition_exercise .song_selector .global_controls {
+      align-items: stretch;
+      flex-direction: column; }
+      .ear_training_page .melody_recognition_exercise .song_selector .global_controls > * {
+        margin: 0;
+        margin-bottom: 10px; }
+        .ear_training_page .melody_recognition_exercise .song_selector .global_controls > *:last-child {
+          margin: 0; } }
+  .ear_training_page .melody_recognition_exercise .song_selector .global_controls .slider_group {
+    flex: 1;
+    border: 1px solid #a2a2a2;
+    border-radius: 3px;
+    display: flex; }
+    .ear_training_page .melody_recognition_exercise .song_selector .global_controls .slider_group > * {
+      padding: 5px 3px;
+      display: flex;
+      align-items: center; }
+    .ear_training_page .melody_recognition_exercise .song_selector .global_controls .slider_group > span {
+      font-size: 14px;
+      font-weight: bold; }
+    .ear_training_page .melody_recognition_exercise .song_selector .global_controls .slider_group code {
+      min-width: 30px;
+      text-align: center; }
+    .ear_training_page .melody_recognition_exercise .song_selector .global_controls .slider_group > .shuffle_button {
+      padding: 2px 8px;
+      border: 0;
+      border-radius: 0;
+      font-size: 12px; }
+    .ear_training_page .melody_recognition_exercise .song_selector .global_controls .slider_group > .slider_component {
+      flex: 1; }
+      .ear_training_page .melody_recognition_exercise .song_selector .global_controls .slider_group > .slider_component .slider_track {
+        flex: 1; }
+
+.ear_training_page .melody_recognition_exercise .song_selector .current_song {
+  margin-top: 20px;
+  background: #f3f3f3;
+  padding: 10px; }
+  .ear_training_page .melody_recognition_exercise .song_selector .current_song .song_title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px; }
+  .ear_training_page .melody_recognition_exercise .song_selector .current_song .song_controls {
+    display: flex;
+    align-items: center; }
+    .ear_training_page .melody_recognition_exercise .song_selector .current_song .song_controls > * {
+      margin-right: 10px; }
+      .ear_training_page .melody_recognition_exercise .song_selector .current_song .song_controls > *:last-child {
+        margin-right: 0; }
+
+.ear_training_page .melody_playback_exercise {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .ear_training_page .melody_playback_exercise details.instructions {
+    margin-bottom: 10px; }
+    .ear_training_page .melody_playback_exercise details.instructions summary {
+      display: inline;
+      cursor: pointer;
+      font-weight: bold; }
+  .ear_training_page .melody_playback_exercise .keyboard {
+    margin-top: auto;
+    position: static; }
+  .ear_training_page .melody_playback_exercise .page_container {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .ear_training_page .melody_playback_exercise .page_container > p:first-child {
+      margin-top: 0; }
+  .ear_training_page .melody_playback_exercise .stat_controls {
+    display: flex;
+    align-items: center; }
+    .ear_training_page .melody_playback_exercise .stat_controls > * {
+      margin-right: 10px; }
+      .ear_training_page .melody_playback_exercise .stat_controls > *:last-child {
+        margin-right: 0; }
+    .ear_training_page .melody_playback_exercise .stat_controls > .stats_row {
+      flex: 1;
+      text-align: right; }
+  .ear_training_page .melody_playback_exercise fieldset {
+    margin-top: 20px; }
+    .ear_training_page .melody_playback_exercise fieldset > .spacer {
+      flex: 1; }
+  .ear_training_page .melody_playback_exercise .slider_component {
+    display: block; }
+  .ear_training_page .melody_playback_exercise > :last-child {
+    margin-bottom: 0; }
+
+.ear_training_page fieldset {
+  border: 1px solid #ddd; }
+  .ear_training_page fieldset legend {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #666; }
+
+.ear_training_page .range_picker button {
+  margin-right: 10px; }
+  .ear_training_page .range_picker button.active {
+    background-color: #8f8fa6;
+    box-shadow: 0 0 0 2px #6f6f6f; }
+  .ear_training_page .range_picker button:last-child {
+    margin-right: 0; }
+
+.ear_training_page .confirm_buttons {
+  display: flex;
+  margin-top: 20px; }
+  .ear_training_page .confirm_buttons .spacer {
+    flex: 1; }

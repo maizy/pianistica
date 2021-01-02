@@ -1,0 +1,97 @@
+.play_along_page {
+  overflow: hidden; }
+  .play_along_page .draggable {
+    user-select: none;
+    -webkit-user-drag: none;
+    display: flex;
+    flex-direction: column; }
+  .play_along_page .keyboard {
+    position: static; }
+  .play_along_page .staff_wrapper {
+    margin-bottom: 0; }
+  .play_along_page .play_along_workspace > h2 {
+    font-size: 20px;
+    background: white;
+    padding: 20px 20px 0 40px;
+    margin: 0; }
+  .play_along_page .play_along_workspace.settings_open {
+    margin-left: 250px; }
+  .play_along_page .transport_controls {
+    display: flex;
+    align-items: center;
+    padding-right: 40px; }
+    .play_along_page .transport_controls > * {
+      margin-left: 10px; }
+      .play_along_page .transport_controls > *:first-child {
+        margin-left: 0; }
+    .play_along_page .transport_controls .play_pause {
+      min-width: 60px; }
+    .play_along_page .transport_controls > button {
+      height: 28px; }
+      .play_along_page .transport_controls > button .svgicon {
+        fill: white; }
+    .play_along_page .transport_controls input[type=text] {
+      margin-left: 10px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      border: 1px solid #bcbcbc;
+      font-family: 'Raleway', sans-serif;
+      font-size: 13px;
+      padding: 4px 4px;
+      height: 28px;
+      width: 45px;
+      border-radius: 2px;
+      text-align: center; }
+    .play_along_page .transport_controls .loop_controls {
+      margin-left: 20px;
+      display: flex;
+      align-items: center; }
+      .play_along_page .transport_controls .loop_controls .label_text {
+        font-size: 13px;
+        font-weight: bold;
+        opacity: 0.8; }
+    .play_along_page .transport_controls .spacer {
+      flex: 1; }
+    .play_along_page .transport_controls .transport_slider {
+      width: 200px;
+      height: 28px; }
+  .play_along_page .song_tracks {
+    background: white;
+    margin: 0;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    list-style: none; }
+    .play_along_page .song_tracks > * {
+      margin-right: 10px;
+      display: flex;
+      align-items: center; }
+      .play_along_page .song_tracks > *:last-child {
+        margin-right: 0; }
+  .play_along_page .empty_tracks {
+    margin: 20px 0; }
+  .play_along_page.has_song .staff_wrapper .song_error {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .play_along_page:not(.has_song) .song_error {
+    padding: 20px 0; }
+  .play_along_page .settings_panel .slider_row {
+    display: flex; }
+    .play_along_page .settings_panel .slider_row .slider_component {
+      flex: 1; }
+  .play_along_page .settings_panel label {
+    display: block;
+    margin: 0 10px 10px 10px; }
+    .play_along_page .settings_panel label .input_label {
+      font-size: 13px;
+      color: #666;
+      font-weight: bold;
+      margin-bottom: 5px; }

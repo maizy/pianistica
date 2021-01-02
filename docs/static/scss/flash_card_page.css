@@ -1,0 +1,130 @@
+.flash_card_page .flash_card_header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(162, 162, 162, 0.5);
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.3); }
+  .flash_card_page .flash_card_header > .exercise_label {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold; }
+
+.flash_card_page .card_holder {
+  text-align: center;
+  margin: 40px 0; }
+  @media (max-width: 1100px) {
+    .flash_card_page .card_holder {
+      margin-top: 0; } }
+.flash_card_page .no_cards_error {
+  text-align: center;
+  padding: 40px;
+  display: block; }
+
+.flash_card_page .transition_group {
+  position: relative; }
+  .flash_card_page .transition_group > .card_row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; }
+    .flash_card_page .transition_group > .card_row:first-child {
+      position: static; }
+
+.flash_card_page .flash_card {
+  background: white;
+  font-size: 80px;
+  display: inline-block;
+  padding: 80px 40px;
+  font-weight: bold;
+  position: relative; }
+  @media (max-width: 1100px) {
+    .flash_card_page .flash_card {
+      font-size: 60px;
+      display: block; } }
+.flash_card_page .card_row.show_card-enter .flash_card {
+  opacity: 0.5;
+  transition: opacity 0.4s ease, transform 0.4s ease-out;
+  transform: scale(0.8, 0.8); }
+  .flash_card_page .card_row.show_card-enter .flash_card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: black;
+    opacity: 0.5;
+    transition: opacity 0.4s ease; }
+
+.flash_card_page .card_row.show_card-enter.show_card-enter-active .flash_card {
+  transform: scale(1, 1);
+  opacity: 1; }
+  .flash_card_page .card_row.show_card-enter.show_card-enter-active .flash_card:before {
+    opacity: 0; }
+
+.flash_card_page .card_row.show_card-exit .flash_card {
+  transform: rotate(0);
+  transition: all 0.4s ease-out;
+  opacity: 1; }
+
+.flash_card_page .card_row.show_card-exit.show_card-exit-active .flash_card {
+  transform: translate(-100px, 50px) rotate(-40deg);
+  opacity: 0; }
+
+.flash_card_page .start_message {
+  background: white;
+  padding: 20px;
+  margin: 40px auto;
+  text-align: center;
+  max-width: 400px; }
+
+.flash_card_page .card_options {
+  margin-top: 40px;
+  text-align: center; }
+  .flash_card_page .card_options > button {
+    margin-left: 15px;
+    font-size: 18px;
+    padding: 10px 20px; }
+    .flash_card_page .card_options > button:first-child {
+      margin-left: 0; }
+  @media (max-width: 1100px) {
+    .flash_card_page .card_options {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      padding: 10px;
+      background: rgba(231, 231, 231, 0.8); }
+      .flash_card_page .card_options > button {
+        margin: 5px; } }
+.flash_card_page .settings_panel .exercise_selector {
+  display: block; }
+
+.flash_card_page .settings_panel .test_group {
+  margin: 0 10px;
+  margin-bottom: 5px;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2px 8px;
+  border-radius: 3px;
+  color: #666;
+  white-space: nowrap; }
+  .flash_card_page .settings_panel .test_group.selected {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.2); }
+  .flash_card_page .settings_panel .test_group:last-child {
+    margin-bottom: 0; }
+  .flash_card_page .settings_panel .test_group input {
+    margin-right: 8px; }
+
+.chord_identification_exercise .flash_card {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .chord_identification_exercise .flash_card .staff {
+    min-width: 300px;
+    font-size: 12px; }

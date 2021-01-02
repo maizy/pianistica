@@ -1,0 +1,106 @@
+.settings_panel {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #D6D6D6;
+  width: 270px;
+  border-right: 2px solid #a2a2a2;
+  z-index: 1; }
+  @media (min-height: 750px) {
+    .settings_panel {
+      top: 50px; } }
+  .settings_panel.slide_right-enter {
+    opacity: 0;
+    transform: translate(-20%, 0);
+    transition: opacity 0.2s ease, transform 0.2s ease; }
+    .settings_panel.slide_right-enter.slide_right-enter-active {
+      transform: translate(0, 0);
+      opacity: 1; }
+  .settings_panel.slide_right-exit {
+    opacity: 1;
+    transition: opacity 0.1s ease; }
+    .settings_panel.slide_right-exit.slide_right-exit-active {
+      opacity: 0; }
+  .settings_panel .settings_header {
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    background: #a2a2a2;
+    color: white; }
+    .settings_panel .settings_header h3 {
+      margin: 0; }
+    .settings_panel .settings_header button {
+      float: right; }
+  .settings_panel .generator_inputs {
+    border: 1px solid #a2a2a2;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5); }
+  .settings_panel .generator_input {
+    margin-bottom: 10px; }
+    .settings_panel .generator_input:last-child {
+      margin-bottom: 0; }
+    .settings_panel .generator_input .input_label {
+      font-size: 13px;
+      color: #666;
+      font-weight: bold;
+      margin-bottom: 2px; }
+    .settings_panel .generator_input .select_component {
+      display: block; }
+    .settings_panel .generator_input .slider_row {
+      height: 26px;
+      display: flex;
+      align-items: center; }
+      .settings_panel .generator_input .slider_row .slider_component {
+        width: auto;
+        flex: 1; }
+      .settings_panel .generator_input .slider_row .current_value {
+        width: 20px;
+        text-align: center; }
+    .settings_panel .generator_input .note_range_row {
+      display: flex;
+      margin-top: 5px; }
+      .settings_panel .generator_input .note_range_row label {
+        font-size: 12px;
+        font-weight: bold;
+        color: #666;
+        display: flex; }
+        .settings_panel .generator_input .note_range_row label > * {
+          margin-left: 5px; }
+      .settings_panel .generator_input .note_range_row > * {
+        flex-grow: 1;
+        align-items: center;
+        margin-left: 5px; }
+        .settings_panel .generator_input .note_range_row > *:first-child {
+          margin-left: 0; }
+  .settings_panel .settings_group {
+    padding: 0 10px;
+    margin-bottom: 20px; }
+    .settings_panel .settings_group h4 {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #666;
+      font-size: 12px;
+      margin: 0 10px;
+      margin-bottom: 10px; }
+    .settings_panel .settings_group .toggle_option {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      display: inline-block;
+      width: calc(50% - 10px);
+      background: white;
+      border: 1px solid #a2a2a2;
+      text-align: center;
+      margin: 0 5px 5px 5px;
+      color: #444; }
+      .settings_panel .settings_group .toggle_option.active {
+        color: #5b5b74;
+        background: #e3e3e9;
+        border-color: #727290;
+        box-shadow: 0 0 0 1px #727290;
+        font-weight: bold; }

@@ -1,0 +1,30 @@
+.song_editor {
+  min-height: 200px;
+  padding: 20px;
+  display: flex; }
+  .song_editor .song_editor_tools {
+    width: 25%;
+    max-width: 350px;
+    min-width: 220px;
+    margin-left: 20px;
+    flex-basis: 1; }
+    .song_editor .song_editor_tools input[type='text'] {
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box; }
+  .song_editor > textarea {
+    flex-basis: 1;
+    flex-grow: 1; }
+  .song_editor .form_tools {
+    display: flex;
+    align-items: center; }
+    .song_editor .form_tools .select_component {
+      height: 28px;
+      padding: 0 10px;
+      display: flex;
+      box-sizing: border-box; }
+    .song_editor .form_tools > * {
+      margin-left: 5px; }
+    .song_editor .form_tools > :first-child {
+      margin-left: 0;
+      flex: 1; }

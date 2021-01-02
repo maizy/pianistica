@@ -1,0 +1,3 @@
+.gitignore
+
+: foreach *.md |> python3 convert_to_json.py %f > %o |> %B.json

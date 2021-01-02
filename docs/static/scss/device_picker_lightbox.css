@@ -1,0 +1,14 @@
+.device_picker_lightbox .input_row {
+  margin-top: 10px; }
+
+.device_picker_lightbox .midi_instrument_test_buttons {
+  margin-top: 20px; }
+  .device_picker_lightbox .midi_instrument_test_buttons > button {
+    margin-right: 10px; }
+    .device_picker_lightbox .midi_instrument_test_buttons > button:last-child {
+      margin-right: 0; }
+
+.device_picker_lightbox .device_type_picker {
+  margin-bottom: 10px; }
+  .device_picker_lightbox .device_type_picker .label {
+    margin-right: 5px; }

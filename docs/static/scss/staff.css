@@ -1,0 +1,172 @@
+.grand_staff .staff:first-child {
+  margin-bottom: 70px; }
+
+.staff {
+  position: relative;
+  height: 120px;
+  border-left: 6px solid black;
+  margin: 60px 0 60px 0; }
+  .staff .cleff {
+    z-index: 1;
+    user-select: none;
+    -webkit-user-drag: none; }
+  .staff.g_staff .cleff {
+    position: absolute;
+    left: 14px;
+    height: 165%;
+    top: -28%; }
+  .staff.f_staff .cleff {
+    position: absolute;
+    left: 8px;
+    height: 82%; }
+  .staff .ledger_line {
+    position: absolute;
+    height: 2px;
+    background: #666; }
+  .staff .lines .line {
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #666; }
+  .staff .lines .line2 {
+    top: 25%; }
+  .staff .lines .line3 {
+    top: 50%; }
+  .staff .lines .line4 {
+    top: 75%; }
+  .staff .lines .line5 {
+    top: auto;
+    bottom: 0; }
+  .staff .key_signature {
+    position: absolute;
+    left: 100px;
+    top: 0;
+    bottom: 0; }
+    .staff .key_signature .accidental {
+      position: absolute;
+      top: 0; }
+      .staff .key_signature .accidental.sharp {
+        height: 78%;
+        transform: translate(0, -50%); }
+      .staff .key_signature .accidental.flat {
+        height: 50%;
+        transform: translate(-44%, -71%); }
+  .staff .staff_song_notes .measure_line {
+    width: 2px;
+    position: absolute;
+    background: #666;
+    top: 0;
+    bottom: 0; }
+    .staff .staff_song_notes .measure_line[data-label]:before {
+      position: absolute;
+      content: attr(data-label);
+      font-size: 12px;
+      font-weight: bold;
+      bottom: 100%;
+      padding-bottom: 4px;
+      color: #888; }
+  .staff .staff_song_notes .note_bar {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    height: 20%;
+    transform: translate(0, -47%); }
+    .staff .staff_song_notes .note_bar:before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: 0;
+      bottom: 4px;
+      left: 0;
+      background: #69a25d;
+      box-shadow: 0 0 0 2px #2f3a35;
+      border-radius: 12px; }
+    .staff .staff_song_notes .note_bar.is_sharp:before {
+      background: #a25d5d;
+      border-radius: 12px 12px 0 0; }
+    .staff .staff_song_notes .note_bar.is_flat:before {
+      background: #5d92a2;
+      border-radius: 0 0 12px 12px; }
+    .staff .staff_song_notes .note_bar.is_natural:before {
+      background: #915da2;
+      border-radius: 0; }
+    .staff .staff_song_notes .note_bar.held:before {
+      background: #94e085;
+      box-shadow: 0 0 0 2px #46564f; }
+    .staff .staff_song_notes .note_bar.outside_loop:before {
+      background: #bbb;
+      box-shadow: none; }
+  .staff .staff_notes {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    right: 0;
+    bottom: 0; }
+    .staff .staff_notes .annotation {
+      background: gray;
+      color: white;
+      position: absolute;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      opacity: 0.5;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+    .staff .staff_notes .accidental {
+      height: 100%;
+      position: absolute;
+      right: 110%; }
+      .staff .staff_notes .accidental.sharp {
+        height: 300%;
+        top: -100%; }
+      .staff .staff_notes .accidental.flat {
+        height: 200%;
+        top: -91%; }
+      .staff .staff_notes .accidental.natural {
+        height: 300%;
+        top: -100%;
+        right: 115%; }
+    .staff .staff_notes .note {
+      position: absolute;
+      top: 0;
+      left: 120px;
+      height: 20%;
+      transform: translate(0, -47%);
+      transition: 0.1s ease transform; }
+      .staff .staff_notes .note .primary {
+        height: 100%; }
+      .staff .staff_notes .note.group_offset {
+        margin-left: 30px; }
+      .staff .staff_notes .note.held {
+        opacity: 0.2;
+        transform: scale3d(1.1, 1.1, 1) translate(0, -47%); }
+  .staff .time_bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: red;
+    left: 220px; }
+
+.chord_staff {
+  padding: 40px 20px; }
+  .chord_staff .chord_scrolling {
+    white-space: nowrap; }
+  .chord_staff .chord {
+    font-size: 30px;
+    font-weight: bold;
+    width: 160px;
+    display: inline-flex;
+    align-items: center; }
+  .chord_staff .touched {
+    margin-left: 5px;
+    font-weight: normal;
+    display: flex;
+    height: 35px;
+    align-items: center; }
+    .chord_staff .touched .right {
+      color: #aada80; }
+    .chord_staff .touched .wrong {
+      color: #fe4e50; }
